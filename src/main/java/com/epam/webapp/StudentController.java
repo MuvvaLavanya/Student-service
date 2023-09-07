@@ -15,9 +15,6 @@ public class StudentController {
     // Declare the service as final to ensure its immutability
     private final StudentService studentService;
 
-    @Value("${cloud.aws.end-point.uri}")
-    private String endPoint;
-
     // Use constructor-based dependency injection
     @Autowired
     public StudentController(StudentService studentService) {
