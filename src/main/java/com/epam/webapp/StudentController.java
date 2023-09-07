@@ -34,8 +34,6 @@ public class StudentController {
     }
 
 
-
-
     @PostMapping
     public ResponseEntity<Student> createStudent(@RequestBody Student student) {
 
