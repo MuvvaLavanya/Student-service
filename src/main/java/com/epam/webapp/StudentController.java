@@ -55,6 +55,6 @@ public class StudentController {
     @GetMapping
     public String getMessage()
     {
-        return "hello";
+        return "hello world ";
     }
 }
