@@ -21,35 +21,40 @@ public class StudentController {
         this.studentService = studentService;
     }
 
+//    @GetMapping
+//    public ResponseEntity<List<Student>> getAllStudents() {
+//        return ResponseEntity.ok(studentService.getAllStudents());
+//    }
+//
+//    @GetMapping("/{id}")
+//    public ResponseEntity<Student> getStudentById(@PathVariable String id) {
+//        return studentService.getStudentById(id)
+//                .map(ResponseEntity::ok)
+//                .orElse(ResponseEntity.notFound().build());
+//    }
+//
+//
+//    @PostMapping
+//    public ResponseEntity<Student> createStudent(@RequestBody Student student) {
+//
+//        Student student1=studentService.saveStudent(student);
+//        return ResponseEntity.ok(student1);
+//
+//    }
+//
+//    @PutMapping("/{id}")
+//    public ResponseEntity<Student> updateStudent(@PathVariable String id, @RequestBody Student student) {
+//        return ResponseEntity.ok(studentService.saveStudent(student));
+//    }
+//
+//    @DeleteMapping("/{id}")
+//    public ResponseEntity<Void> deleteStudent(@PathVariable String id) {
+//        studentService.deleteStudent(id);
+//        return ResponseEntity.noContent().build();
+//    }
     @GetMapping
-    public ResponseEntity<List<Student>> getAllStudents() {
-        return ResponseEntity.ok(studentService.getAllStudents());
-    }
-
-    @GetMapping("/{id}")
-    public ResponseEntity<Student> getStudentById(@PathVariable String id) {
-        return studentService.getStudentById(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
-    }
-
-
-    @PostMapping
-    public ResponseEntity<Student> createStudent(@RequestBody Student student) {
-
-        Student student1=studentService.saveStudent(student);
-        return ResponseEntity.ok(student1);
-
-    }
-
-    @PutMapping("/{id}")
-    public ResponseEntity<Student> updateStudent(@PathVariable String id, @RequestBody Student student) {
-        return ResponseEntity.ok(studentService.saveStudent(student));
-    }
-
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteStudent(@PathVariable String id) {
-        studentService.deleteStudent(id);
-        return ResponseEntity.noContent().build();
+    public String getMessage()
+    {
+        return "hello";
     }
 }
