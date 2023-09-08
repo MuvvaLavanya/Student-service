@@ -9,7 +9,8 @@ phases:
       - echo Entered the build phase...
       - mvn clean package
   post_build:
-    - echo Build completed successfully
+    commands:
+      - echo Build completed successfully
 artifacts:
   files:
     - target/Student-Service.jar
