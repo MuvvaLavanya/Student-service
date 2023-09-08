@@ -13,13 +13,13 @@ import java.util.List;
 public class StudentController {
 
     // Declare the service as final to ensure its immutability
-    private final StudentService studentService;
-
-    // Use constructor-based dependency injection
-    @Autowired
-    public StudentController(StudentService studentService) {
-        this.studentService = studentService;
-    }
+//    private final StudentService studentService;
+//
+//    // Use constructor-based dependency injection
+//    @Autowired
+//    public StudentController(StudentService studentService) {
+//        this.studentService = studentService;
+//    }
 
 //    @GetMapping
 //    public ResponseEntity<List<Student>> getAllStudents() {
